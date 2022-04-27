@@ -6,13 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ServiceImpl implements MemberService{
+public class MemberServiceImpl implements MemberService {
 
     @Autowired
     MemberDao memberDao;
 
     @Override
     public void postJoin(MemberDto dto) {
+        memberDao.insert(dto);
 
+    }
+
+    @Override
+    public MemberDto postLogin(MemberDto dto) {
+        return null;
     }
 }

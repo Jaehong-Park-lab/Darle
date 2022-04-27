@@ -379,12 +379,12 @@
 </div>
 <jsp:include page="/WEB-INF/views/main/footer.jsp"></jsp:include>
 </body>
-<script>$(document).ready(function (){
-    // 회원가입 버튼(회원가입 기능 작동)
-    $(".join_button").click(function (){
-        $("#join_form").attr("action", "/join/join");
-        $("#join_form").submit();
-    })
-})</script>
-<%--<script src="js/darle.js"></script>--%>
+<%--<script>$(document).ready(function (){--%>
+<%--    // 회원가입 버튼(회원가입 기능 작동)--%>
+<%--    $(".join_button").click(function (){--%>
+<%--        $("#join_form").attr("action", "/join/join");--%>
+<%--        $("#join_form").submit();--%>
+<%--    })--%>
+<%--})</script>--%>
+<script src="js/darle.js"></script>
 </html>

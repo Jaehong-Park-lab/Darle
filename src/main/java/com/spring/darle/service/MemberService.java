@@ -7,4 +7,5 @@ import org.springframework.stereotype.Service;
 public interface MemberService {
     public void postJoin(MemberDto dto);
 
+    public MemberDto postLogin(MemberDto dto);
 }

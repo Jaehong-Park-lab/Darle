@@ -9,20 +9,20 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class UserController {
-
     @Autowired
     private MemberService memberService;
 
-//    회원가입 페이지
+    //    회원가입 페이지
     @GetMapping("/join")
-    public String getJoin(){
+    public String getJoin() {
         return "join/join";
     }
 
     @PostMapping("/join")
-    public String postJoin(MemberDto dto){
+    public String postJoin(MemberDto dto) {
         memberService.postJoin(dto);
-        return "login/login";
+        System.out.println("test111");
+        return "main/index";
     }
 
 //    로그인 페이지
